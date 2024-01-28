@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Blocks</title>
+</head>
+<body>
+
+   <!-- Featured Blocks Style Start-->
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+   <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+
+    .container{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .featured_blocks{
+       display: flex;
+       flex-wrap: wrap;
+    }
+    .left_block{
+     flex-basis: 70%;
+    }
+    .right_block{
+        flex-basis: 30%;
+    }
+    .block{
+     position: relative;
+     overflow: hidden;
+     border-radius: 6px;
+    }
+    .block_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .4s;
+    }
+    .block:hover .block_img{
+    transform: scale(1.1);
+    }
+    .second, .third{
+        height: 215px;
+       max-width: 100%;
+    }
+    .second{
+        margin-bottom: 20px;
+    }
+
+    .fast{
+    max-width: 100%;
+    height: 450px;
+    margin-right:20px;
+    
+    }
+    .product_title{
+    font-size: 21px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-family: Poppins;
+    color: #282830;
+    }
+    .product_text{
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-family: Poppins;
+    color: #282830;
+    }
+
+    .product_box{
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    z-index: 10;
+    margin: 30px;
+    max-width: 310px;
+    min-height: 390px;
+    }
+    .product_content{
+        padding: 22px 30px 30px;
+    }
+    .product_img{
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .offer_box {
+    align-items: center;
+    background-color: #f17734;
+    border-radius: 50%;
+    bottom: 60px;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 93px;
+    justify-content: center;
+    position: absolute;
+    right: 25px;
+    text-align: center;
+    width: 93px;
+}
+
+.offer_box p{
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+    opacity: 0.6;
+    font-size: 14px;
+    font-family: Poppins;
+}
+
+  .offer_box b {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 2px;
+    opacity: 1;
+    font-family: Poppins;
+   }
+   .bottom_text {
+    bottom: 20px;
+    color: #60ac05;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-family: Poppins;
+}
+
+.second .offer_box{
+    left: 25px;
+}
+
+.block_content{
+    position: relative;
+    z-index: 10;
+    top: 50%;
+    left: 0;
+    transform: translate(0px, -50%);
+    padding-left: 30%;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.block_content .product_title, 
+.block_content .product_text{
+    color: #ffffff;
+}
+.third .block_content{
+    padding-left: 30px;
+    padding-right: 30%;
+    text-align: left;
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+    .fast {
+    margin: 0px 0px 20px 0px;
+}
+    .featured_blocks{
+    flex-direction: column;
+    }
+}
+
+
+   </style>
+    <!-- Featured Blocks Style End-->
+
+    <!-- Featured Blocks Start-->
+    <section style="padding: 80px 0px;">
+        <div class="container">
+            <div class="featured_blocks">
+                <div class="left_block">
+                     <div class="block fast">
+                        <img class="block_img" src="images/big-block-bg.jpg" alt="">
+                        <!-- Product Box -->
+                        <div class="product_box">
+                            <div class="product_content">
+                                <!-- offer Red Box -->
+                                <div class="offer_box">
+                                    <p>Direct leverbaar</p>
+                                    <b>Nieuw</b>
+                                </div>
+
+                            <h2 class="product_title">De nieuwe Giant Propel 2024</h2>
+                            <p class="product_text">Race-winning efficiency</p>
+                            <img class="product_img" src="images/block-featured-product.jpg" alt="">
+                            <!-- Bottom Text -->
+                            <p class="bottom_text">Gratis verzending!</p>
+                                                            
+                        </div>
+                        </div>
+                     </div>
+                </div><!--left_block-->
+                <div class="right_block">
+                    <div class="block second">
+                        <img class="block_img" src="images/small-block-1.jpg" alt="">
+                     <!-- offer Red Box -->
+                    <div class="offer_box">
+                     <p>Direct leverbaar</p>
+                     <b>Nieuw</b>
+                     </div>
+                      <div class="block_content">
+                        <h2 class="product_title">De nieuwe Giant Propel 2024</h2>
+                        <p class="product_text">Race-winning efficiency</p>
+                      </div>
+                     </div>
+
+                     <div class="block third">
+                        <img class="block_img" src="images/small-block-2.jpg" alt="">
+                        <div class="block_content">
+                            <h2 class="product_title">De nieuwe Giant Propel 2024</h2>
+                            <p class="product_text">Race-winning efficiency</p>
+                          </div>
+                     </div>
+                    
+                </div><!--right_block-->
+            </div><!--featured_blocks-->
+
+        </div> <!--container-->
+    </section>
+
+     <!-- Featured Blocks End-->
+    
+</body>
+</html>
